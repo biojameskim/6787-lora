@@ -1,0 +1,33 @@
+Job started at: Mon Apr 27 10:45:24 AM EDT 2026
+Running on node: jjs533-compute-02.cs.cornell.edu
+Job ID: 939699
+Array index: 34 / 54
+Config: configs/exp1_lora_rank/exp1__lora_r4__sst2__seed1.yaml
+[run_id] exp1__lora_r4__sst2__seed1
+[config] {"run_id": "exp1__lora_r4__sst2__seed1", "experiment": "exp1", "seed": 1, "peft_method": "lora", "task": "sst2", "precision": "bf16", "max_steps": 1000, "per_device_train_batch_size": 16, "gradient_accumulation_steps": 2, "learning_rate": 0.0002, "max_seq_length": 128, "eval_batch_size": 16, "model_id": "Qwen/Qwen2.5-1.5B", "lora_rank": 4, "lora_alpha_mult": 2, "lora_dropout": 0.05, "lora_target_modules": ["q_proj", "v_proj"], "prefix_num_virtual_tokens": null, "ia3_target_modules": ["k_proj", "v_proj", "down_proj"], "ia3_feedforward_modules": ["down_proj"], "weight_decay": 0.0, "warmup_ratio": 0.03, "lr_scheduler_type": "cosine", "eval_max_examples": null}
+[params] trainable=544,768 / total=1,544,259,072 (0.0353%)
+[data] sst2 train rows: 67,349
+{'loss': '0.868', 'grad_norm': '1.197', 'learning_rate': '0.0001998', 'epoch': '0.02375'}
+{'loss': '0.09895', 'grad_norm': '0.3538', 'learning_rate': '0.0001975', 'epoch': '0.04751'}
+{'loss': '0.08971', 'grad_norm': '0.4173', 'learning_rate': '0.0001927', 'epoch': '0.07126'}
+{'loss': '0.09155', 'grad_norm': '0.3721', 'learning_rate': '0.0001854', 'epoch': '0.09501'}
+{'loss': '0.09058', 'grad_norm': '0.5978', 'learning_rate': '0.0001759', 'epoch': '0.1188'}
+{'loss': '0.08135', 'grad_norm': '0.7841', 'learning_rate': '0.0001644', 'epoch': '0.1425'}
+{'loss': '0.06959', 'grad_norm': '0.3038', 'learning_rate': '0.0001512', 'epoch': '0.1663'}
+{'loss': '0.07266', 'grad_norm': '0.1543', 'learning_rate': '0.0001367', 'epoch': '0.19'}
+{'loss': '0.08819', 'grad_norm': '0.2932', 'learning_rate': '0.0001212', 'epoch': '0.2138'}
+{'loss': '0.08131', 'grad_norm': '0.5211', 'learning_rate': '0.0001052', 'epoch': '0.2375'}
+{'loss': '0.07658', 'grad_norm': '0.256', 'learning_rate': '8.901e-05', 'epoch': '0.2613'}
+{'loss': '0.07565', 'grad_norm': '0.6277', 'learning_rate': '7.313e-05', 'epoch': '0.285'}
+{'loss': '0.07309', 'grad_norm': '0.3048', 'learning_rate': '5.795e-05', 'epoch': '0.3088'}
+{'loss': '0.07944', 'grad_norm': '0.422', 'learning_rate': '4.387e-05', 'epoch': '0.3325'}
+{'loss': '0.07919', 'grad_norm': '0.2764', 'learning_rate': '3.126e-05', 'epoch': '0.3563'}
+{'loss': '0.07375', 'grad_norm': '0.3133', 'learning_rate': '2.045e-05', 'epoch': '0.38'}
+{'loss': '0.07446', 'grad_norm': '0.3883', 'learning_rate': '1.172e-05', 'epoch': '0.4038'}
+{'loss': '0.07326', 'grad_norm': '0.2316', 'learning_rate': '5.303e-06', 'epoch': '0.4276'}
+{'loss': '0.075', 'grad_norm': '0.3156', 'learning_rate': '1.361e-06', 'epoch': '0.4513'}
+{'loss': '0.06828', 'grad_norm': '0.2894', 'learning_rate': '5.245e-10', 'epoch': '0.4751'}
+{'train_runtime': '165.5', 'train_samples_per_second': '193.4', 'train_steps_per_second': '6.042', 'train_loss': '0.119', 'epoch': '0.4751'}
+[train] elapsed=165.7s peak_vram=7.84 GB tokens/s=3621
+[eval] {'acc': 0.9529816513761468, 'acc_norm': 0.9529816513761468, 'n': 872}
+[done] wrote results/runs/exp1__lora_r4__sst2__seed1/

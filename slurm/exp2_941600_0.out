@@ -1,0 +1,14 @@
+Job: 941626 array 0/18  cfg=configs/exp2/gsm8k/exp2__lora_r16_fp32__gsm8k__seed0.yaml
+[run_id] exp2__lora_r16_fp32__gsm8k__seed0
+[config] {"run_id": "exp2__lora_r16_fp32__gsm8k__seed0", "experiment": "exp2", "seed": 0, "peft_method": "lora", "task": "gsm8k", "precision": "fp32", "max_steps": 3000, "per_device_train_batch_size": 2, "gradient_accumulation_steps": 16, "learning_rate": 0.0002, "max_seq_length": 512, "eval_batch_size": 1, "model_id": "Qwen/Qwen2.5-1.5B", "lora_rank": 16, "lora_alpha_mult": 2, "lora_dropout": 0.05, "lora_target_modules": ["q_proj", "v_proj"], "prefix_num_virtual_tokens": null, "ia3_target_modules": ["k_proj", "v_proj", "down_proj"], "ia3_feedforward_modules": ["down_proj"], "weight_decay": 0.0, "warmup_ratio": 0.03, "lr_scheduler_type": "cosine", "eval_max_examples": 500}
+[params] trainable=2,179,072 / total=1,545,893,376 (0.1410%)
+[data] gsm8k train rows: 7,473
+{'loss': '0.5421', 'grad_norm': '0.01232', 'learning_rate': '0.0001089', 'epoch': '0.2141'}
+{'loss': '0.3588', 'grad_norm': '0.01377', 'learning_rate': '0.0002', 'epoch': '0.4282'}
+{'loss': '0.3447', 'grad_norm': '0.01173', 'learning_rate': '0.0001998', 'epoch': '0.6422'}
+{'loss': '0.3455', 'grad_norm': '0.01336', 'learning_rate': '0.0001993', 'epoch': '0.8563'}
+{'loss': '0.3389', 'grad_norm': '0.01206', 'learning_rate': '0.0001985', 'epoch': '1.069'}
+{'loss': '0.3193', 'grad_norm': '0.0129', 'learning_rate': '0.0001975', 'epoch': '1.283'}
+{'loss': '0.3258', 'grad_norm': '0.01301', 'learning_rate': '0.0001961', 'epoch': '1.497'}
+{'loss': '0.3364', 'grad_norm': '0.0158', 'learning_rate': '0.0001945', 'epoch': '1.711'}
+{'loss': '0.3283', 'grad_norm': '0.01191', 'learning_rate': '0.0001926', 'epoch': '1.925'}

@@ -1,0 +1,29 @@
+Job: 992545 array 17/18  cfg=configs/exp3/sst2/exp3__prefix20__sst2__seed2.yaml
+[run_id] exp3__prefix20__sst2__seed2
+[config] {"run_id": "exp3__prefix20__sst2__seed2", "experiment": "exp3", "seed": 2, "peft_method": "prefix", "task": "sst2", "precision": "bf16", "max_steps": 1000, "per_device_train_batch_size": 16, "gradient_accumulation_steps": 2, "learning_rate": 0.001, "max_seq_length": 128, "eval_batch_size": 16, "model_id": "Qwen/Qwen2.5-1.5B", "lora_rank": null, "lora_alpha_mult": 2, "lora_dropout": 0.05, "lora_target_modules": ["q_proj", "v_proj"], "prefix_num_virtual_tokens": 20, "ia3_target_modules": ["k_proj", "v_proj", "down_proj"], "ia3_feedforward_modules": ["down_proj"], "weight_decay": 0.0, "warmup_ratio": 0.03, "lr_scheduler_type": "cosine", "eval_max_examples": null}
+[params] trainable=286,720 / total=1,544,001,024 (0.0186%)
+[data] sst2 train rows: 67,349
+{'loss': '5.796', 'grad_norm': '1.02', 'learning_rate': '0.0009991', 'epoch': '0.02375'}
+{'loss': '0.9424', 'grad_norm': '0.5126', 'learning_rate': '0.0009876', 'epoch': '0.04751'}
+{'loss': '0.3955', 'grad_norm': '0.437', 'learning_rate': '0.0009633', 'epoch': '0.07126'}
+{'loss': '0.3844', 'grad_norm': '0.263', 'learning_rate': '0.000927', 'epoch': '0.09501'}
+{'loss': '0.3786', 'grad_norm': '0.3265', 'learning_rate': '0.0008794', 'epoch': '0.1188'}
+{'loss': '0.3638', 'grad_norm': '0.3814', 'learning_rate': '0.0008219', 'epoch': '0.1425'}
+{'loss': '0.3594', 'grad_norm': '0.3133', 'learning_rate': '0.0007561', 'epoch': '0.1663'}
+{'loss': '0.3448', 'grad_norm': '0.2016', 'learning_rate': '0.0006835', 'epoch': '0.19'}
+{'loss': '0.3541', 'grad_norm': '0.3161', 'learning_rate': '0.0006061', 'epoch': '0.2138'}
+{'loss': '0.346', 'grad_norm': '0.3101', 'learning_rate': '0.0005259', 'epoch': '0.2375'}
+{'loss': '0.3412', 'grad_norm': '0.2321', 'learning_rate': '0.0004451', 'epoch': '0.2613'}
+{'loss': '0.3408', 'grad_norm': '0.2154', 'learning_rate': '0.0003656', 'epoch': '0.285'}
+{'loss': '0.3366', 'grad_norm': '0.2356', 'learning_rate': '0.0002898', 'epoch': '0.3088'}
+{'loss': '0.3381', 'grad_norm': '0.2471', 'learning_rate': '0.0002194', 'epoch': '0.3325'}
+{'loss': '0.3411', 'grad_norm': '0.1895', 'learning_rate': '0.0001563', 'epoch': '0.3563'}
+{'loss': '0.3371', 'grad_norm': '0.2189', 'learning_rate': '0.0001023', 'epoch': '0.38'}
+{'loss': '0.3287', 'grad_norm': '0.2346', 'learning_rate': '5.861e-05', 'epoch': '0.4038'}
+{'loss': '0.3327', 'grad_norm': '0.241', 'learning_rate': '2.651e-05', 'epoch': '0.4276'}
+{'loss': '0.3363', 'grad_norm': '0.2868', 'learning_rate': '6.805e-06', 'epoch': '0.4513'}
+{'loss': '0.3317', 'grad_norm': '0.2758', 'learning_rate': '2.622e-09', 'epoch': '0.4751'}
+{'train_runtime': '136.2', 'train_samples_per_second': '235', 'train_steps_per_second': '7.343', 'train_loss': '0.6515', 'epoch': '0.4751'}
+[train] elapsed=136.4s peak_vram=7.56 GB tokens/s=4398
+[eval] {'acc': 0.5103211009174312, 'acc_norm': 0.5103211009174312, 'n': 872}
+[done] wrote results/runs/exp3__prefix20__sst2__seed2/

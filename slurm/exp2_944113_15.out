@@ -1,0 +1,2 @@
+Job: 987611 array 15/18  cfg=configs/exp2/sst2/exp2__lora_r16_int4__sst2__seed0.yaml
+[skip] exp2__lora_r16_int4__sst2__seed0: metrics.json already exists. Use --force to re-run.

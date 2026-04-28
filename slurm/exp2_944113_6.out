@@ -1,0 +1,49 @@
+Job: 974436 array 6/18  cfg=configs/exp2/hellaswag/exp2__lora_r16_fp32__hellaswag__seed0.yaml
+[run_id] exp2__lora_r16_fp32__hellaswag__seed0
+[config] {"run_id": "exp2__lora_r16_fp32__hellaswag__seed0", "experiment": "exp2", "seed": 0, "peft_method": "lora", "task": "hellaswag", "precision": "fp32", "max_steps": 2000, "per_device_train_batch_size": 4, "gradient_accumulation_steps": 8, "learning_rate": 0.0002, "max_seq_length": 256, "eval_batch_size": 8, "model_id": "Qwen/Qwen2.5-1.5B", "lora_rank": 16, "lora_alpha_mult": 2, "lora_dropout": 0.05, "lora_target_modules": ["q_proj", "v_proj"], "prefix_num_virtual_tokens": null, "ia3_target_modules": ["k_proj", "v_proj", "down_proj"], "ia3_feedforward_modules": ["down_proj"], "weight_decay": 0.0, "warmup_ratio": 0.03, "lr_scheduler_type": "cosine", "eval_max_examples": 2000}
+[params] trainable=2,179,072 / total=1,545,893,376 (0.1410%)
+[data] hellaswag train rows: 39,905
+{'loss': '2.319', 'grad_norm': '0.05832', 'learning_rate': '0.0001633', 'epoch': '0.04009'}
+{'loss': '2.16', 'grad_norm': '0.0622', 'learning_rate': '0.0001998', 'epoch': '0.08018'}
+{'loss': '2.131', 'grad_norm': '0.07656', 'learning_rate': '0.000199', 'epoch': '0.1203'}
+{'loss': '2.105', 'grad_norm': '0.07508', 'learning_rate': '0.0001975', 'epoch': '0.1604'}
+{'loss': '2.109', 'grad_norm': '0.1102', 'learning_rate': '0.0001954', 'epoch': '0.2005'}
+{'loss': '2.066', 'grad_norm': '0.0529', 'learning_rate': '0.0001926', 'epoch': '0.2406'}
+{'loss': '2.085', 'grad_norm': '0.06295', 'learning_rate': '0.0001892', 'epoch': '0.2806'}
+{'loss': '2.095', 'grad_norm': '0.0776', 'learning_rate': '0.0001853', 'epoch': '0.3207'}
+{'loss': '2.059', 'grad_norm': '0.05393', 'learning_rate': '0.0001808', 'epoch': '0.3608'}
+{'loss': '2.071', 'grad_norm': '0.05658', 'learning_rate': '0.0001758', 'epoch': '0.4009'}
+{'loss': '2.08', 'grad_norm': '0.08654', 'learning_rate': '0.0001703', 'epoch': '0.441'}
+{'loss': '2.058', 'grad_norm': '0.05893', 'learning_rate': '0.0001643', 'epoch': '0.4811'}
+{'loss': '2.08', 'grad_norm': '0.07065', 'learning_rate': '0.0001579', 'epoch': '0.5212'}
+{'loss': '2.062', 'grad_norm': '0.05526', 'learning_rate': '0.0001511', 'epoch': '0.5613'}
+{'loss': '2.057', 'grad_norm': '0.0543', 'learning_rate': '0.000144', 'epoch': '0.6014'}
+{'loss': '2.063', 'grad_norm': '0.06108', 'learning_rate': '0.0001365', 'epoch': '0.6415'}
+{'loss': '2.041', 'grad_norm': '0.05203', 'learning_rate': '0.0001289', 'epoch': '0.6816'}
+{'loss': '2.05', 'grad_norm': '0.04729', 'learning_rate': '0.0001211', 'epoch': '0.7217'}
+{'loss': '2.074', 'grad_norm': '0.06036', 'learning_rate': '0.0001131', 'epoch': '0.7618'}
+{'loss': '2.037', 'grad_norm': '0.06163', 'learning_rate': '0.000105', 'epoch': '0.8018'}
+{'loss': '2.058', 'grad_norm': '0.06422', 'learning_rate': '9.692e-05', 'epoch': '0.8419'}
+{'loss': '2.087', 'grad_norm': '0.0593', 'learning_rate': '8.885e-05', 'epoch': '0.882'}
+{'loss': '2.07', 'grad_norm': '0.05731', 'learning_rate': '8.085e-05', 'epoch': '0.9221'}
+{'loss': '2.053', 'grad_norm': '0.04648', 'learning_rate': '7.297e-05', 'epoch': '0.9622'}
+{'loss': '2.058', 'grad_norm': '0.05163', 'learning_rate': '6.527e-05', 'epoch': '1.002'}
+{'loss': '2.058', 'grad_norm': '0.06007', 'learning_rate': '5.78e-05', 'epoch': '1.042'}
+{'loss': '2.028', 'grad_norm': '0.06012', 'learning_rate': '5.061e-05', 'epoch': '1.082'}
+{'loss': '2.026', 'grad_norm': '0.058', 'learning_rate': '4.374e-05', 'epoch': '1.122'}
+{'loss': '2.021', 'grad_norm': '0.06339', 'learning_rate': '3.724e-05', 'epoch': '1.162'}
+{'loss': '2.062', 'grad_norm': '0.05888', 'learning_rate': '3.114e-05', 'epoch': '1.202'}
+{'loss': '2.036', 'grad_norm': '0.06696', 'learning_rate': '2.551e-05', 'epoch': '1.242'}
+{'loss': '2.032', 'grad_norm': '0.06366', 'learning_rate': '2.035e-05', 'epoch': '1.282'}
+{'loss': '2.024', 'grad_norm': '0.06766', 'learning_rate': '1.572e-05', 'epoch': '1.322'}
+{'loss': '2.058', 'grad_norm': '0.06423', 'learning_rate': '1.165e-05', 'epoch': '1.362'}
+{'loss': '2.038', 'grad_norm': '0.07013', 'learning_rate': '8.148e-06', 'epoch': '1.403'}
+{'loss': '2.02', 'grad_norm': '0.05895', 'learning_rate': '5.251e-06', 'epoch': '1.443'}
+{'loss': '2.033', 'grad_norm': '0.07376', 'learning_rate': '2.975e-06', 'epoch': '1.483'}
+{'loss': '2.035', 'grad_norm': '0.07963', 'learning_rate': '1.335e-06', 'epoch': '1.523'}
+{'loss': '2.013', 'grad_norm': '0.06809', 'learning_rate': '3.408e-07', 'epoch': '1.563'}
+{'loss': '2.027', 'grad_norm': '0.05858', 'learning_rate': '1.311e-10', 'epoch': '1.603'}
+{'train_runtime': '2538', 'train_samples_per_second': '25.22', 'train_steps_per_second': '0.788', 'train_loss': '2.066', 'epoch': '1.603'}
+[train] elapsed=2538.0s peak_vram=9.99 GB tokens/s=1952
+[eval] {'acc': 0.4875, 'acc_norm': 0.613, 'n': 2000}
+[done] wrote results/runs/exp2__lora_r16_fp32__hellaswag__seed0/

@@ -1,0 +1,5 @@
+Job started at: Mon Apr 27 06:43:43 AM EDT 2026
+Running on node: duchin-compute-01.cis.cornell.edu
+Job ID: 939433
+Array index: 34 / 54
+Config: configs/exp1_lora_rank/exp1__lora_r4__sst2__seed1.yaml

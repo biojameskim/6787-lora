@@ -1,0 +1,2 @@
+Job: 12057 array 15/18  cfg=configs/exp3/sst2/exp3__prefix20__sst2__seed0.yaml
+[skip] exp3__prefix20__sst2__seed0: metrics.json already exists. Use --force to re-run.

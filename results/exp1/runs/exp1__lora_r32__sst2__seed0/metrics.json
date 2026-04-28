@@ -1,0 +1,24 @@
+{
+  "task": {
+    "acc": 0.9587155963302753,
+    "acc_norm": 0.9587155963302753,
+    "n": 872
+  },
+  "params": {
+    "trainable_params": 4358144,
+    "total_params": 1548072448,
+    "trainable_pct": 0.28152067467064695
+  },
+  "hardware": {
+    "peak_vram_gb": 7.913185792,
+    "train_seconds": 171.79653791897,
+    "eval_seconds": 17.819466900080442,
+    "train_tokens_per_sec": 3492.4976211278317
+  },
+  "efficiency": {
+    "primary_metric": "acc",
+    "primary_acc": 0.9587155963302753,
+    "acc_per_param": 2.1998254218545217e-07,
+    "acc_per_gpu_hour": 20.089905120305023
+  }
+}
