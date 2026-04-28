@@ -2,6 +2,10 @@
 
 **CS 6787 Final Project (Spring 2026) — *Efficiency Frontiers of PEFT Under Compute and Memory Constraints***
 
+James, Sri, Param
+
+---
+
 A single experimental harness that fine-tunes **Qwen2.5-1.5B** on three tasks (SST-2, HellaSwag, GSM8K) across a matrix of PEFT methods (full / LoRA / IA³ / prefix) and precisions (FP32 / BF16 / INT4 QLoRA), then rolls accuracy + hardware metrics into one CSV. Every cell of every experiment is one YAML config consumed by the same `python -m src.train --config <yaml>` entry point — that's what makes accuracy / param and accuracy / GPU-hour comparable across runs.
 
 ## Experiments
@@ -100,5 +104,4 @@ sbatch jobs/exp3_peft.sh
 
 - [`docs/REPORT.md`](docs/REPORT.md) — write-up: introduction, methods, results per experiment.
 - [`docs/internal/PROGRESS.md`](docs/internal/PROGRESS.md) — phase-by-phase progress log.
-- [`CLAUDE.md`](CLAUDE.md) — harness architecture, locked-in design choices, conventions for extending.
 - [`proposal/`](proposal/) — original CS 6787 project proposal.
